@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Invoice</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+
+        .w-full {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        .font-normal {
+            font-weight: 400;
+        }
+
+        .text-base {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+
+
+        /* FOOTER */
+        .footer {
+            margin-top: 6px;
+            margin-bottom: 10px;
+        }
+
+        /* section-1 */
+        .footer-section1 {
+            border-bottom: 1px solid #b99a37;
+            padding-bottom: 7px;
+        }
+
+        .receiver {
+            padding-top: 1.5rem;
+            padding-inline-start: 2rem
+        }
+
+        .w-180 {
+            width: 180px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .sign-underline {
+            border-bottom: 2px solid black;
+        }
+
+        .text-xs {
+            font-size: 0.75rem;
+            line-height: 1rem;
+        }
+
+        .sales-person {
+            padding-top: 1.5rem;
+            padding-inline-end: 2rem;
+        }
+
+        /* Section -2 */
+        .tnc {
+           width: 40px;
+           padding-right: 7px;
+           vertical-align: top;
+        }
+        /* Section -2 */
+
+        .footer-section3 {
+            padding-top: 0.75rem;
+        }
+
+        .pt-1 {
+            padding-top: 0.25rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+        }
+
+        .phone-icon {
+            color: #B99A37;
+        }
+
+        .text-12 {
+            font-size: 12px;
+        }
+
+        .font-semibold {
+            font-weight: 500;
+        }
+
+        .ps-1 {
+            padding-inline-start: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Invoice Footer -->
+    <table class="w-full footer" id="footer">
+        <tr>
+            <td class="footer-section1">
+                <table class="w-full">
+                    <tr>
+                        <td>
+                            <table class="text-sm">
+                                <tr>
+                                    <td>
+                                        <span class="font-bold">Terms: </span>
+                                        <span class="font-normal"></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="font-bold">Remarks: </span>
+                                        <span class="font-normal"></span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="font-bold">
+                        <td align="left" class="receiver">
+                            <table class="w-180 text-center">
+                                <tr>
+                                    <td class="sign-underline text-sm">Dhyan Moradiya</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-xs">Receiver's sign</td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td align="right" class="sales-person">
+                            <table class="w-180 text-center">
+                                <tr>
+                                    <td class="sign-underline text-sm">Admin</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-xs">Sales Person's sign</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <table>
+                <tr class="text-12">
+                    <td class="tnc">
+                        <span class="font-bold">T & C: </span>
+                    </td>
+                    <td colspan="2">
+                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+                            beatae doloremque aut delectus corporis. Fuga tempora culpa, doloremque ex commodi, quod
+                            incidunt suscipit obcaecati libero, recusandae dicta corporis sed eius!</span>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+        <tr>
+            <td class="footer-section3">
+                <table class="w-full">
+                    <tr>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td colspan="2" class="pt-1">
+                                        <span>
+                                            <i class='bx bx-phone text-xl phone-icon'></i>
+                                        </span>
+                                        <span class="text-base font-bold">Helpline</span><br>
+                                    </td>
+                                </tr>
+                                <tr class="text-12">
+                                    <td class="font-bold">
+                                        <span>Mob:</span>
+                                    </td>
+                                    <td class="font-semibold">
+                                        <span> +971 55 2700189</span>
+                                    </td>
+                                </tr>
+                                <tr class="text-12">
+                                    <td class="font-bold">
+                                        <span>Mob:</span>
+                                    </td>
+                                    <td class="font-semibold">
+                                        <span> +971 54 5116050</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td align="right">
+                            <table>
+                                <tr>
+                                    <td colspan="2">
+                                        <span>
+                                            <img  style="margin-bottom:-5px;" src="../Images/location.svg" alt="" srcset="" >
+                                            <span  style="margin-bottom:10px;" class="text-base font-bold">Our Branches</span><br>
+                                    </td>
+                                </tr>
+                                <tr class="text-12">
+                                    <td class="font-bold">
+                                        <span>AI Qouz 3 </span>
+                                    </td>
+                                    <td class="font-semibold ps-1">
+                                        <span> Kiosk 7, Building # 1, Gold & Diamond Park, Dubai (P.O Box:117973)</span>
+                                    </td>
+                                </tr>
+                                <tr class="text-12">
+                                    <td class="font-bold">
+                                        <span>Gold Souk </span>
+                                    </td>
+                                    <td class="font-semibold ps-1">
+                                        <span>Shop # 15, Al Matrooshi Building, Deira. Dubai (P.O Box: 25812)</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
